@@ -13,11 +13,11 @@
 
 // OPTIONS
 var enableAutoClicker = true; // set to false to disable autoclicker
-var clickRate = 20; // change to number of desired clicks per second
-var setClickVariable = false; // change to true to improve performance
+var clickRate = 30; // change to number of desired clicks per second
+var setClickVariable = true; // change to true to improve performance
 
 var disableParticleEffects = true; // Set to false to keep particle effects
-var disableFlinching = false; // Set to true to disable flinching animation for enemies.
+var disableFlinching = true; // Set to true to disable flinching animation for enemies.
 
 var alertOnRun = true; // Set to false to disable information alert box
 
@@ -55,8 +55,8 @@ var ENEMY_TYPE = {
 
 // disable particle effects - this drastically reduces the game's memory leak
 if (window.g_Minigame !== undefined && disableParticleEffects) {
-	window.g_Minigame.CurrentScene().DoClickEffect = function() {};
-	window.g_Minigame.CurrentScene().DoCritEffect = function( nDamage, x, y, additionalText ) {};
+	//window.g_Minigame.CurrentScene().DoClickEffect = function() {};
+	//window.g_Minigame.CurrentScene().DoCritEffect = function( nDamage, x, y, additionalText ) {};
 	window.g_Minigame.CurrentScene().SpawnEmitter = function(emitter) {
 		emitter.emit = false;
 		return emitter;
