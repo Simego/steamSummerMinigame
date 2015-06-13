@@ -14,7 +14,7 @@
 // OPTIONS
 var enableAutoClicker = true; // set to false to disable autoclicker
 var clickRate = 30; // change to number of desired clicks per second
-var setClickVariable = true; // change to true to improve performance
+var setClickVariable = false; // change to true to improve performance
 
 var disableParticleEffects = true; // Set to false to keep particle effects
 var disableFlinching = true; // Set to true to disable flinching animation for enemies.
